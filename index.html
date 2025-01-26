@@ -1,11 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css">
 </head>
+
+
 <body>
-    <h1>proov</h1>
+<!-- nav/header -->
+   <header class="navbar">
+       <div class="wrapper">
+           <!--nav-left-->
+           <nav class="navbar-nav">
+               <ul>
+                   <li><a href="#benefits">Eelised</a></li>
+                   <li><a href="#collection">Kollektsioon</a></li>
+                   <li><a href="#about">Meist</a></li>
+               </ul>
+           </nav>
+           <!--logo-->
+           <a href="#home" class="navbar-logo">
+               <img src="/images/choco-logo.svg" alt="Choca">
+           </a>
+           <!--off-screen menu and hamburger icon for mobile -->
+           <div class="mobile-nav">
+               <div class="ham-menu"><span></span> <span></span> <span></span></div>
+               <div class="off-screen-menu"> <span class="close-btn">×</span>
+                   <ul>
+                       <li><a href="#benefits">Eelised</a></li>
+                       <li><a href="#collection">Kollektsioon</a></li>
+                       <li><a href="#about">Meist</a></li>
+                       <li><a href="#about-candies">Kommidest</a></li>
+                       <li><a href="#recipes">Retseptid</a></li>
+                       <li><a href="#faq">KKK</a></li>
+                   </ul>
+               </div>
+           </div> <!--nav-right-->
+           <nav class="navbar-nav">
+               <ul>
+                   <li><a href="#about-candies">Kommidest</a></li>
+                   <li><a href="#recipes">Retseptid</a></li>
+                   <li><a href="#faq">KKK</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+
+<!--hero-->
+   <div class="hero">
+       <div class="content">
+           <h1>Elu magusamad hetked jäta Choca hooleks</h1>
+           <div>
+               <button class="primary-btn" onclick="document.getElementById('collection').scrollIntoView();">Tutvu kollektsiooniga</button>
+               <button class="secondary-btn" onclick="document.getElementById('collection').scrollIntoView();">Loe meist lähemalt</button>
+           </div>
+       </div>
+       <div class="hero-products">
+           <img src="images/hero-products.png" alt="">
+       </div>
+   </div>
+
+
+<!--benefits-->
+   <section class="benefits" id="benefits">
+       <div class="benefit">
+           <div class="icon">
+               <img src="/images/oad-ikoon.svg" alt="Kakaoubade ikoon">
+           </div>
+           <div class="content">
+               <h4>Kvaliteetne kakao</h4>
+               <p>Iga komm saab alguse toorainetest, mis on kasvatatud jätkusuutlikkuse põhimõtete järgi.</p>
+           </div>
+       </div>
+       <div class="benefit">
+           <div class="icon">
+               <img src="/images/kommid-ikoon.svg" alt="Kommide ikoon">
+           </div>
+           <div class="content">
+               <h4>Rikkalik maitse</h4>
+               <p>Hõrgud maitsed, mis hellitavad sinu maitsemeeli ja toovad igasse ampsu ainulaadse elamuse.</p>
+           </div>
+       </div>
+       <div class="benefit">
+           <div class="icon">
+               <img src="/images/sudamed-ikoon.svg" alt="südamete ikoon">
+           </div>
+           <div class="content">
+               <h4>Meistrite käsitöö</h4>
+               <p>Iga komm on meie meistrite poolt hoole ja armastusega valmistatud, tagades täpsuse ja kvaliteedi.</p>
+           </div>
+       </div>
+   </section>
+
+
+<!--slider-->
+   <section class="section3" id="collection">
+       <h3>AVASTA</h3>
+       <h2>Choca uus kollekstioon</h2>
+
+
+       <div class="slider">
+
+
+           <input class="slider-input" type="radio" name="slider" id="s1" checked>
+           <input class="slider-input" type="radio" name="slider" id="s2">
+           <input class="slider-input" type="radio" name="slider" id="s3">
+           <input class="slider-input" type="radio" name="slider" id="s4">
+           <input class="slider-input" type="radio" name="slider" id="s5">
+
+
+           <div class="slider-images">
+
+
+               <label for="s1" id="slide1">
+
+
+                   <div class="slider-image">
+                       <div class="image">
+                           <img src="/images/piparmunt.png" alt="piparmünditäidisega kommid">
+                       </div>
+                   </div>
+               </label>
+
+
+               <label for="s2" id="slide2">
+
+
+                   <div class="slider-image">
+                       <div class="image">
+                           <img src="/images/vaarikas.png" alt="vaarikatäidisega kommid">
+                       </div>
+                   </div>
+               </label>
+
+
+               <label for="s3" id="slide3">
+
+
+                   <div class="slider-image">
+                       <div class="image">
+                           <img src="/images/karamell.png" alt="karamellitäidisega kommid">
+                       </div>
+                   </div>
+               </label>
+
+
+               <label for="s4" id="slide4">
+
+
+                   <div class="slider-image">
+                       <div class="image">
+                           <img src="/images/pistaatsia.png" alt="pistaatsiatäidisega kommid">
+                       </div>
+                   </div>
+               </label>
+
+
+               <label for="s5" id="slide5">
+
+
+                   <div class="slider-image">
+                       <div class="image">
+                           <img src="/images/maasikas.png" alt="maasikatäidisega kommid">
+                       </div>
+                   </div>
+               </label>
+           </div>
+       </div>
+   </section>
+
+
+<!--about-->
+   <section class="about" id="about">
+       <div class="about-text">
+           <h3>MEIST</h3>
+           <h2>Choca lugu</h2>
+           <p>Choca sündis armastusest šokolaadi vastu. Meie eesmärk on pakkuda kõigile šokolaadisõpradele unustamatuid
+               maitseelamusi, kasutades ainult parimaid koostisosi ja traditsioonilisi valmistusmeetodeid.</p>
+           <button class="tertiary-btn">Loe lähemalt &gt;</button>
+       </div>
+       <div class="about-images">
+           <img src="/images/choco1.jpg" alt="sulav šokolaad" class="top-image">
+           <img src="/images/chips.jpg" alt="šokolaadi kommid" class="bottom-image">
+       </div>
+   </section>
+
+
+<!--about-candies-->
+   <section class="about-candies-section" id="about-candies">
+       <div class="about-candies">
+           <div class="about-candies-text">
+               <h3>KOMMIDEST</h3>
+               <h2>Teekond oast kommini</h2>
+               <p>Iga Choca šokolaadikomm algab hoolikalt valitud parimatest kakaooastest. Meie protsess hõlmab
+                   traditsiooniliste tehnikate ja kaasaegsete uuenduste segu, tagades, et iga komm on meistriteos.
+                   Röstimisest karastamiseni, iga samm viiakse läbi täpsuse ja kirega.</p>
+               <button class="tertiary-btn">Loe lähemalt &gt;</button>
+           </div>
+           <div class="about-candies-images">
+               <img src="/images/kulp.jpg" alt="šokolaadi kommid puidust lusikal" class="top-image">
+               <img src="/images/cocoa-gray.jpg" alt="kakaooad ja kakaopulber laual" class="bottom-image">
+           </div>
+       </div>
+   </section>
+
+
+<!--recipes-->
+   <section class="recipe-collection" id="recipes">
+   <h2>Retseptikogumik</h2>
+   <div class="recipes">
+     <div class="recipe">
+       <img src="/images/chip-cookies.jpg" alt="Ameerika šokolaadiküpsised">
+       <div class="overlay"></div>
+       <p>Ameerika šokolaadiküpsised &gt;</p>
+     </div>
+     <div class="recipe">
+       <img src="/images/banana-bread.jpg" alt="Šokolaaditükkidega banaanileib">
+       <div class="overlay"></div>
+       <p>Šokolaaditükkidega banaanileib &gt;</p>
+     </div>
+     <div class="recipe">
+       <img src="/images/brownie.jpg" alt="Šokolaaditükkidega brownie">
+       <div class="overlay"></div>
+       <p>Šokolaaditükkidega brownie &gt;</p>
+   </div>
+   <div class="recipe">
+       <img src="/images/muffs.jpg" alt="Šokolaaditükkidega muffinid">
+       <div class="overlay"></div>
+       <p>Šokolaaditükkidega muffinid &gt;</p>
+   </div>
+   </div>
+   <div class="recipe-slider-controls">
+     <button class="recipe-slider-nav prev">&lt;</button>
+     <button class="recipe-slider-nav next">&gt;</button>
+   </div>
+   </section>
+
+
+<!--FAQ-->
+   <section class="faq-section" id="faq">
+       <div class="heading">
+           <h3>KKK</h3>
+           <h2>korduma kippuvad küsimused</h2>
+       </div>
+       <div class="faq-item">
+           <div class="faq-question">
+               <span>Milliseid koostisosi kasutatakse Choca kommides?</span>
+               <span>+</span>
+           </div>
+           <div class="faq-answer">
+               <p>Kasutame ainult kõrgeima kvaliteediga koostisosi, sealhulgas kakaovõid, kakaomassi, looduslikke maitseaineid ja minimaalselt töödeldud suhkruid.</p>
+           </div>
+       </div>
+       <div class="faq-item">
+           <div class="faq-question">
+               <span>Kas teie šokolaadikommid sisaldavad pähkleid või muid allergeene?</span>
+               <span>+</span>
+           </div>
+           <div class="faq-answer">
+               <p>Mõned meie šokolaadikommid sisaldavad pähkleid ja muid allergeene. Palun vaadake konkreetse toote koostisosade loetelu enne ostmist.</p>
+           </div>
+       </div>
+       <div class="faq-item">
+           <div class="faq-question">
+               <span>Kuidas Choca šokolaadikomme säilitada?</span>
+               <span>+</span>
+           </div>
+           <div class="faq-answer">
+               <p>Choca šokolaadikomme on kõige parem säilitada jahedas ja kuivas kohas, eemal otsesest
+                   päikesevalgusest.</p>
+           </div>
+       </div>
+       <div class="faq-item">
+           <div class="faq-question">
+               <span>Kas Choca šokolaadid on vegan?</span>
+               <span>+</span>
+           </div>
+           <div class="faq-answer">
+               <p>Jah, meie Choca šokolaadid on vegan ja ei sisalda loomseid koostisosi.</p>
+           </div>
+       </div>
+       <div class="faq-item">
+           <div class="faq-question">
+               <span>Kas teie šokolaad on eetiliselt toodetud?</span>
+               <span>+</span>
+           </div>
+           <div class="faq-answer">
+               <p>Meie šokolaad on Fairtrade sertifitseeritud, tagades eetilised kaubandustingimused ja parema elukvaliteedi põllumeestele.</p>
+           </div>
+       </div>
+   </section>
+
+
+<!--footer-->
+   <footer>
+   <div class="footer-top">
+     <div class="logo"><img src="/images/choco-logo.svg" alt="Choca logo"></div>
+     <div class="newsletter">
+       <p class="newsletter-text">Magusad üllatused on vaid ühe sammu kaugusel – telli uudiskiri ja need otse meilile!</p>
+       <form>
+         <div class="form-group">
+           <div>
+             <label for="firstname">Eesnimi*</label>
+             <input type="text" id="firstname" name="firstname" placeholder="Eesnimi*" required>
+           </div>
+           <div>
+             <label for="email">Meiliaadress*</label>
+             <input type="email" id="email" name="email" placeholder="Meiliaadress*" required>
+           </div>
+         </div>
+         <div class="privacy">
+           <input type="checkbox" id="privacy" name="privacy" required>
+           <label for="privacy">Nõustun uudiskirja privaatsustingimustega</label>
+         </div>
+         <button type="submit">Liitu uudiskirjaga</button>
+       </form>
+     </div>
+   </div>
+   <div class="footer-bottom">
+     <hr>
+     <p>Copyright © 2025. All Rights Reserved.</p>
+   </div>
+   <div class="social-icons">
+     <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+     <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+     <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+   </div>
+   </footer> 
+
+
+<!--FAQ functionality-->
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+           const items = document.querySelectorAll('.faq-item');
+           items.forEach(item => {
+               item.addEventListener('click', () => {
+                   item.classList.toggle('active');
+                   items.forEach(otherItem => {
+                       if (otherItem !== item) {
+                           otherItem.classList.remove('active');
+                       }
+                   });
+               });
+           });
+       });
+   </script>
+
+
+<!--hamburger-menu-->
+   <script>
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+const closeBtn = document.querySelector('.close-btn');
+
+
+// Avab menüü
+hamMenu.addEventListener('click', () => {
+ offScreenMenu.classList.add('active');
+});
+
+
+// Sulgeb menüü
+closeBtn.addEventListener('click', () => {
+ offScreenMenu.classList.remove('active');
+});
+   </script>
+
+
+<!--smooth scrolling-->
+<script>
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+       e.preventDefault();
+       const target = document.querySelector(this.getAttribute('href'));
+       if (target) {
+           target.scrollIntoView({
+               behavior: 'smooth', // smooth kerimine
+               block: 'start' // sektsiooni algusse
+           });
+       }
+   });
+});
+</script>
+
+
+<!--recipe nav-->
+   <script>
+   const recipesContainer = document.querySelector('.recipes');
+   const prevBtn = document.querySelector('.slider-nav.prev');
+   const nextBtn = document.querySelector('.slider-nav.next');
+  
+   prevBtn.addEventListener('click', () => {
+     recipesContainer.scrollBy({ left: -recipesContainer.clientWidth, behavior: 'smooth' });
+   });
+  
+   nextBtn.addEventListener('click', () => {
+     recipesContainer.scrollBy({ left: recipesContainer.clientWidth, behavior: 'smooth' });
+   });
+  
+   </script>
 </body>
 </html>
