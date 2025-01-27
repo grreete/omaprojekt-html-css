@@ -99,6 +99,7 @@ button {
   color: var(--primary-text-color);
   background-color: var(--primary-btn-bg-color);
   border: none;
+  z-index: 20;
 }
 
 .primary-btn:hover {
@@ -347,6 +348,7 @@ a:hover {
   max-width: 1200px;
   margin: 100px 20px 0 20px;
   transform: translateY(-120%);
+  z-index: 10;
 }
 
 .hero .content button {
@@ -419,12 +421,11 @@ a:hover {
     width: auto;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .hero .content {
     transform: translateY(-50%);
     padding-bottom: 70px;
   }
-
   .hero-products img {
     width: 800px;
   }
@@ -544,7 +545,6 @@ a:hover {
 .slider-images .image {
   display: flex;
   justify-content: space-between;
-  user-select: none;
 }
 
 .slider-image .image img {
