@@ -51,8 +51,8 @@
        <div class="content">
            <h1>Elu magusamad hetked jäta Choca hooleks</h1>
            <div>
-               <button class="primary-btn" onclick="document.getElementById('collection').scrollIntoView();">Tutvu kollektsiooniga</button>
-               <button class="secondary-btn" onclick="document.getElementById('collection').scrollIntoView();">Loe meist lähemalt</button>
+            <button class="primary-btn">Tutvu kollektsiooniga</button>
+            <button class="secondary-btn">Loe meist lähemalt</button>            
            </div>
        </div>
        <div class="hero-products">
@@ -95,35 +95,24 @@
    <section class="section3" id="collection">
        <h3>AVASTA</h3>
        <h2>Choca uus kollekstioon</h2>
-
-
        <div class="slider">
-
 
            <input class="slider-input" type="radio" name="slider" id="s1" checked>
            <input class="slider-input" type="radio" name="slider" id="s2">
            <input class="slider-input" type="radio" name="slider" id="s3">
            <input class="slider-input" type="radio" name="slider" id="s4">
            <input class="slider-input" type="radio" name="slider" id="s5">
-
-
+           
            <div class="slider-images">
 
-
                <label for="s1" id="slide1">
-
-
                    <div class="slider-image">
                        <div class="image">
                            <img src="./images/piparmunt.png" alt="piparmünditäidisega kommid">
                        </div>
                    </div>
                </label>
-
-
                <label for="s2" id="slide2">
-
-
                    <div class="slider-image">
                        <div class="image">
                            <img src="./images/vaarikas.png" alt="vaarikatäidisega kommid">
@@ -131,10 +120,7 @@
                    </div>
                </label>
 
-
                <label for="s3" id="slide3">
-
-
                    <div class="slider-image">
                        <div class="image">
                            <img src="./images/karamell.png" alt="karamellitäidisega kommid">
@@ -142,10 +128,7 @@
                    </div>
                </label>
 
-
                <label for="s4" id="slide4">
-
-
                    <div class="slider-image">
                        <div class="image">
                            <img src="./images/pistaatsia.png" alt="pistaatsiatäidisega kommid">
@@ -153,10 +136,7 @@
                    </div>
                </label>
 
-
                <label for="s5" id="slide5">
-
-
                    <div class="slider-image">
                        <div class="image">
                            <img src="./images/maasikas.png" alt="maasikatäidisega kommid">
@@ -358,7 +338,6 @@ closeBtn.addEventListener('click', () => {
 });
    </script>
 
-
 <!--smooth scrolling-->
 <script>
    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -375,9 +354,8 @@ closeBtn.addEventListener('click', () => {
 });
 </script>
 
-
 <!--recipe nav-->
-   <script>
+<script>
    const recipesContainer = document.querySelector('.recipes');
    const prevBtn = document.querySelector('.recipe-slider-nav.prev');
    const nextBtn = document.querySelector('.recipe-slider-nav.next');
@@ -385,11 +363,10 @@ closeBtn.addEventListener('click', () => {
    prevBtn.addEventListener('click', () => {
      recipesContainer.scrollBy({ left: -recipesContainer.clientWidth, behavior: 'smooth' });
    });
-  
+
    nextBtn.addEventListener('click', () => {
      recipesContainer.scrollBy({ left: recipesContainer.clientWidth, behavior: 'smooth' });
    });
-  
-   </script>
+ </script>
 </body>
 </html>
