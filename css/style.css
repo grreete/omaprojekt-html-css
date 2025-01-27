@@ -6,7 +6,8 @@
   --secondary-text-color: #f7f1f0;
   --primary-btn-bg-color: #e5d7d3;
   --secondary-btn-bg-color: #5a3131;
-}
+} 
+
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -271,7 +272,6 @@ a:hover {
   transition: 0.3s ease;
 }
 
-
 .off-screen-menu.active {
   right: 0;
 }
@@ -335,6 +335,7 @@ a:hover {
   padding-top: var(--navbar-height, 75px);
   overflow-x: hidden;
   overflow-y: hidden;
+  
 }
 
 .hero .content {
