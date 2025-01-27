@@ -424,7 +424,7 @@ a:hover {
 @media (max-width: 485px) {
   .hero .content {
     transform: translateY(-50%);
-    padding-bottom: 70px;
+    padding: 70px;
   }
   .hero-products img {
     width: 800px;
