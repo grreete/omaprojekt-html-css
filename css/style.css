@@ -91,6 +91,7 @@ button {
   height: 40px;
   border-radius: 2px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .primary-btn {
@@ -99,16 +100,29 @@ button {
   border: none;
 }
 
+.primary-btn:hover {
+  background-color: var(--primary-bg-color);
+}
+
 .secondary-btn {
   color: var(--secondary-text-color);
   background-color: transparent;
   border: 1.5px solid var(--primary-btn-bg-color);
 }
 
+.secondary-btn:hover {
+  color: var(--primary-text-color);
+  background-color: var(--primary-btn-bg-color);
+}
+
 .tertiary-btn {
   color: var(--secondary-text-color);
   background-color: var(--secondary-btn-bg-color);
   border: none;
+}
+
+.tertiary-btn:hover {
+  background-color: var(--tertiary-bg-color);
 }
 
 /* header and navbar */
@@ -166,12 +180,12 @@ button {
 }
 
 a {
-  color: var(--secondary-text-color);
+  color: var(--primary-btn-bg-color);
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
 }
 a:hover {
-  color: var(--primary-btn-bg-color)
+  color: var(--secondary-text-color);
 }
 
 .off-screen-menu,
@@ -320,6 +334,7 @@ a:hover {
   );
   padding-top: var(--navbar-height, 75px);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .hero .content {
@@ -528,6 +543,7 @@ a:hover {
 .slider-images .image {
   display: flex;
   justify-content: space-between;
+  user-select: none;
 }
 
 .slider-image .image img {
