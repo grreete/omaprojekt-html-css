@@ -336,7 +336,6 @@ a:hover {
   padding-top: var(--navbar-height, 75px);
   overflow-x: hidden;
   overflow-y: hidden;
-  
 }
 
 .hero .content {
@@ -1321,4 +1320,7 @@ footer {
     margin-bottom: 10px;
     padding-right: 0;
   }
+    .footer-top img {
+      display: none;
+    }
 }
