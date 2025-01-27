@@ -166,9 +166,12 @@ button {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: var(--secondary-text-color);
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
+}
+a:hover {
+  color: var(--primary-btn-bg-color)
 }
 
 .off-screen-menu,
@@ -254,6 +257,7 @@ a {
   transition: 0.3s ease;
 }
 
+
 .off-screen-menu.active {
   right: 0;
 }
@@ -263,7 +267,7 @@ a {
   top: 20px;
   right: 20px;
   font-size: 2rem;
-  color: white;
+  color: var(--primary-bg-color);
   cursor: pointer;
 }
 
