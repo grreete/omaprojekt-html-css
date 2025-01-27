@@ -51,8 +51,8 @@
        <div class="content">
            <h1>Elu magusamad hetked jäta Choca hooleks</h1>
            <div>
-            <button class="primary-btn" onclick="scrollIntoView('collection')">Tutvu kollektsiooniga</button>
-            <button class="secondary-btn"onclick="scrollIntoView('about')">Loe meist lähemalt</button>            
+            <button class="primary-btn" onclick="scrollToSection('collection')">Tutvu kollektsiooniga</button>
+            <button class="secondary-btn" onclick="scrollToSection('about')">Loe meist lähemalt</button>            
            </div>
        </div>
        <div class="hero-products">
@@ -367,6 +367,17 @@ closeBtn.addEventListener('click', () => {
    nextBtn.addEventListener('click', () => {
      recipesContainer.scrollBy({ left: recipesContainer.clientWidth, behavior: 'smooth' });
    });
+ </script>
+
+ <script>
+    function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" }); // Sujuv kerimine
+  } else {
+    console.error(`Element with ID '${sectionId}' ei leitud.`);
+  }
+}
  </script>
 </body>
 </html>
