@@ -388,8 +388,8 @@ closeBtn.addEventListener('click', () => {
 <!--recipe nav-->
    <script>
    const recipesContainer = document.querySelector('.recipes');
-   const prevBtn = document.querySelector('.slider-nav.prev');
-   const nextBtn = document.querySelector('.slider-nav.next');
+   const prevBtn = document.querySelector('.recipe-slider-nav.prev');
+   const nextBtn = document.querySelector('.recipe-slider-nav.next');
   
    prevBtn.addEventListener('click', () => {
      recipesContainer.scrollBy({ left: -recipesContainer.clientWidth, behavior: 'smooth' });
