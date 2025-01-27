@@ -134,7 +134,6 @@
    
    /* header and navbar */
    
-   
    .navbar {
     position: sticky;
     top: 0; /* et navbar jääks ekraani ülaossa */
@@ -148,7 +147,6 @@
     z-index: 1000; /* kuvatakse teiste elementide kohal/peal, kõige pealmine layer n-ö */
    }
    
-   
    .wrapper {
     display: flex;
     align-items: center;
@@ -156,7 +154,6 @@
     width: 100%;
     max-width: 1200px;
    }
-   
    
    .navbar-logo {
     margin: 0 20px;
@@ -167,13 +164,11 @@
     */
    }
    
-   
    .navbar-nav {
     display: flex;
     flex: 1;
     justify-content: space-between;
    }
-   
    
    .navbar-nav ul {
     display: flex;
@@ -182,17 +177,14 @@
     justify-content: center;
    }
    
-   
    .navbar-nav li {
     margin: 0 50px;
    }
-   
    
    .navbar-nav a {
     text-decoration: none;
     color: var(--secondary-text-color);
    }
-   
    
    a {
     color: rgb(0, 0, 0);
@@ -200,11 +192,9 @@
     font-weight: 300;
    }
    
-   
    .off-screen-menu, .ham-menu {
     display: none;
    }
-   
    
    @media (max-width: 768px) {
     .navbar {
@@ -269,13 +259,11 @@
     }
    }
    
-   
    @media (max-width: 1124px) {
       .navbar-nav li {
         margin: 0 16px;
       }
-    }
-   
+  }
    
    /* off-screen-menu */
    .off-screen-menu {
@@ -295,11 +283,9 @@
     transition: .3s ease;
    }
    
-   
    .off-screen-menu.active {
     right: 0;
    }
-   
    
    .off-screen-menu .close-btn {
     position: absolute;
@@ -310,9 +296,6 @@
     cursor: pointer;
    }
    
-   
-   
-   
    /* ham menu */
    .ham-menu {
     height: 50px;
@@ -320,7 +303,6 @@
     margin-left: auto;
     position: relative;
    }
-   
    
    .ham-menu span {
     height: 2px;
@@ -334,22 +316,17 @@
     transition: .3s ease;
    }
    
-   
    .ham-menu span:nth-child(1) {
     top: 25%;
    }
-   
    
    .ham-menu span:nth-child(3) {
     top: 75%;
    }
    
-   
    .ham-menu.active span {
     background-color: white;
    }
-   
-   
    
    
    /* hero section */
@@ -364,7 +341,6 @@
     padding-top: var(--navbar-height, 75px);
    }
    
-   
    .hero .content {
     display: flex;
     flex-direction: column;
@@ -376,11 +352,9 @@
     transform: translateY(-120%);
    }
    
-   
    .hero .content button {
     margin: 10px 5px;
    }
-   
    
    .hero-products {
     position: absolute;
@@ -458,7 +432,7 @@
       margin-bottom: 140px;
     }
     .hero-products img {
-      max-width: 700px;
+      max-width: 400px;
     }
    }
    @media (max-width: 400px) {
@@ -491,7 +465,7 @@
    
    
    
-   
+  
    /* benefits */
    
    
@@ -1250,7 +1224,7 @@
    
    
    .faq-item.active .faq-question {
-    font-weight: 500;
+    font-weight: 400;
    }
    
    
