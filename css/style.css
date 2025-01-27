@@ -1274,6 +1274,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .footer-top img {
+    display: none;
+  }
   .newsletter form .form-group {
     flex-direction: column;
   }
