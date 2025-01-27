@@ -439,7 +439,7 @@ a:hover {
 }
 @media (max-width: 400px) {
   .hero .content {
-    transform: translateY(-40%);
+    transform: translateY(-45%);
     padding-bottom: 70px;
     padding-top: 75px;
   }
